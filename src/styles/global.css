@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* Custom styles for Fiorella's portfolio */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.pixel-border {
+  border-style: solid;
+  border-width: 4px;
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h6M2 0v6' stroke='%23ff92d0' stroke-width='2'/></svg>");
+  border-image-repeat: stretch;
+  image-rendering: pixelated;
+  box-shadow: 0 10px 0 rgba(161, 123, 254, 0.3);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, var(--color-accent-2), var(--color-accent)) 1;
+  border-radius: 1rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-yellow);
+  color: var(--color-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  font-weight: 500;
+  font-family: var(--font-pixel);
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 0 rgba(161, 123, 254, 0.5);
+  transform-style: preserve-3d;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 rgba(161, 123, 254, 0.5);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 rgba(161, 123, 254, 0.5);
+}
+
+.pixel-decoration {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  z-index: -1;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.pixel-heading {
+  font-family: var(--font-pixel);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-shadow: 2px 2px 0 var(--color-accent-2);
+}
+
+/* Floating animation */
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.float-delay-2 {
+  animation-delay: 1s;
+}
+
+/* Pixel art icons decoration */
+.pixel-star {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-accent-2);
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+}
