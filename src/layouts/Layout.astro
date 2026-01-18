@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-	title = "Fiorella Cortez | Portfolio",
-	description = "Portfolio website of Fiorella Cortez",
+	title = "Fiorella Cortez | Data Analyst & Software Engineer",
+	description = "Portfolio of Fiorella Cortez, a data analyst and software engineer specialized in transforming data into actionable insights.",
 } = Astro.props;
 ---
 
@@ -16,7 +16,7 @@ const {
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
@@ -24,7 +24,7 @@ const {
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=VT323&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
@@ -32,47 +32,3 @@ const {
 		<slot />
 	</body>
 </html>
-
-<style>
-	:root {
-		--color-primary: #fce2f0;
-		--color-secondary: #f1e5fe;
-		--color-accent: #a17bfe;
-		--color-accent-2: #ff92d0;
-		--color-text: #6c3a6e;
-		--color-text-light: #996c9b;
-		--color-background: #fff6f9;
-		--color-yellow: #fdf7c3;
-		--font-pixel: "VT323", monospace;
-		--font-main: "Fredoka", sans-serif;
-	}
-
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		min-height: 100vh;
-		font-family: var(--font-main);
-		color: var(--color-text);
-		background-color: var(--color-background);
-		background-image: linear-gradient(
-				rgba(252, 226, 240, 0.6) 1px,
-				transparent 1px
-			),
-			linear-gradient(to right, rgba(252, 226, 240, 0.6) 1px, transparent 1px);
-		background-size: 20px 20px;
-		image-rendering: pixelated;
-	}
-
-	@keyframes float {
-		0% {
-			transform: translateY(0px);
-		}
-		50% {
-			transform: translateY(-10px);
-		}
-		100% {
-			transform: translateY(0px);
-		}
-	}
-</style>

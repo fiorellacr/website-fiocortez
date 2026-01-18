@@ -1,273 +1,186 @@
 ---
-import fioImage from "../assets/fio.webp";
+
 ---
 
-<section class="py-20 relative">
-  <!-- Pixel art decorations -->
-  <div class="pixel-decoration star1 float"></div>
-  <div class="pixel-decoration star2 float-delay-1"></div>
-  <div class="pixel-decoration star3 float-delay-2"></div>
-  <div class="pixel-decoration cloud1 float"></div>
-  <div class="pixel-decoration cloud2 float-delay-2"></div>
+<section id="hero" class="hero">
+  <div class="hero-background">
+    <div class="dot dot-1"></div>
+    <div class="dot dot-2"></div>
+    <div class="dot dot-3"></div>
+  </div>
 
-  <div class="container relative">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div>
-        <div class="hello-bubble">
-          <span class="pixel-heading text-5xl">HELLO</span>
-        </div>
+  <div class="container hero-content">
+    <h1 class="hero-title">Fiorella Cortez</h1>
+    <p class="hero-subtitle">Data Analyst & Software Engineer</p>
+    <p class="hero-description">
+      Specialized in transforming large volumes of data into actionable insights.
+      Currently working at AULA20 with expertise in Python, SQL, and business intelligence tools.
+    </p>
 
-        <h1 class="mt-6 mb-4">
-          <span class="welcome-text">Welcome to</span>
-          <span class="name-text">Fiorella's World</span>
-        </h1>
-
-        <p class="text-xl mb-8">
-          Join me on a magical journey through pastel galaxies and rainbow
-          adventures.
-          <br />Explore my creative universe filled with colors, joy, and
-          endless possibilities!
-        </p>
-
-        <div class="flex gap-4">
-          <a href="#contact" class="btn">
-            <span class="pixel-star mr-2"></span>
-            Get in Touch
-          </a>
-          <a href="#portfolio" class="btn">
-            <span class="pixel-star mr-2"></span>
-            View My Work
-          </a>
-        </div>
-      </div>
-
-      <div class="profile-image-container">
-        <div class="pixel-border avatar-frame">
-          <img src={fioImage.src} alt="Fiorella" class="avatar float" />
-        </div>
-      </div>
+    <div class="hero-buttons">
+      <a href="#about" class="btn btn-primary">Learn More</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
     </div>
+
+    <div class="hero-social">
+      <a href="https://www.linkedin.com/in/fio-cortez/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/fio-cortez" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="https://x.com/FiorellaCR00" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
   </div>
 </section>
 
 <style>
-  section {
-    overflow: hidden;
-  }
-
-  .hello-bubble {
-    background-color: #fdf87c;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    display: inline-block;
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    margin-bottom: 1rem;
-    transform: rotate(-2deg);
+    overflow: hidden;
+    padding-top: 5rem;
   }
 
-  .hello-bubble::before,
-  .hello-bubble::after {
-    content: "";
+  .hero-background {
     position: absolute;
-    background-color: #fdf87c;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(219, 234, 254, 0.2), rgba(252, 231, 243, 0.2));
   }
 
-  .hello-bubble::before {
-    width: 20px;
-    height: 20px;
+  .dot {
+    position: absolute;
     border-radius: 50%;
-    bottom: -10px;
-    left: 20px;
   }
 
-  .hello-bubble::after {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    bottom: -20px;
-    left: 10px;
+  .dot-1 {
+    top: 25%;
+    left: 25%;
+    width: 8px;
+    height: 8px;
+    background-color: #60a5fa;
+    animation: pulse 2s infinite;
   }
 
-  .welcome-text {
-    display: block;
-    font-size: 2.5rem;
+  .dot-2 {
+    top: 33%;
+    right: 33%;
+    width: 4px;
+    height: 4px;
+    background-color: #93c5fd;
+    animation: ping 1.5s infinite;
+  }
+
+  .dot-3 {
+    bottom: 25%;
+    left: 33%;
+    width: 12px;
+    height: 12px;
+    background-color: #3b82f6;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes ping {
+    0% { transform: scale(1); opacity: 1; }
+    75%, 100% { transform: scale(2); opacity: 0; }
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3b82f6;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
     color: var(--color-text-light);
-    font-weight: 400;
-    line-height: 1;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
   }
 
-  .name-text {
-    display: block;
-    font-family: var(--font-pixel);
-    font-size: 3.5rem;
-    line-height: 1.2;
-    background: linear-gradient(
-      90deg,
-      var(--color-accent-2),
-      var(--color-accent)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 1px;
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
   }
 
-  .profile-image-container {
+  .hero-social {
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
   }
 
-  .avatar-frame {
-    width: 320px;
-    height: 320px;
-    background-color: white;
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    padding: 10px;
+  .hero-social .social-link {
+    width: auto;
+    height: auto;
   }
 
-  .avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
+  .hero-social .social-link svg {
+    width: 2rem;
+    height: 2rem;
   }
 
-  /* Pixel decorations */
-  .pixel-decoration {
+  .scroll-indicator {
     position: absolute;
-    z-index: -1;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary);
+    animation: bounce 2s infinite;
   }
 
-  .star1 {
-    top: 15%;
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-accent-2);
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    );
-  }
-
-  .star2 {
-    top: 30%;
-    right: 15%;
-    width: 15px;
-    height: 15px;
-    background-color: var(--color-accent);
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    );
-  }
-
-  .star3 {
-    bottom: 20%;
-    left: 20%;
-    width: 25px;
-    height: 25px;
-    background-color: var(--color-yellow);
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    );
-  }
-
-  .cloud1 {
-    top: 15%;
-    right: 30%;
-    width: 60px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-  }
-
-  .cloud1::before,
-  .cloud1::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-  }
-
-  .cloud1::before {
-    width: 25px;
-    height: 25px;
-    top: -10px;
-    left: 10px;
-  }
-
-  .cloud1::after {
-    width: 25px;
-    height: 25px;
-    top: -8px;
-    right: 10px;
-  }
-
-  .cloud2 {
-    bottom: 30%;
-    right: 10%;
-    width: 50px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-  }
-
-  .cloud2::before,
-  .cloud2::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-  }
-
-  .cloud2::before {
-    width: 20px;
-    height: 20px;
-    top: -8px;
-    left: 8px;
-  }
-
-  .cloud2::after {
-    width: 20px;
-    height: 20px;
-    top: -6px;
-    right: 8px;
-  }
-
-  @media (max-width: 768px) {
-    .hello-bubble {
-      transform: rotate(-5deg);
+  @media (min-width: 640px) {
+    .hero-buttons {
+      flex-direction: row;
     }
 
-    .name-text {
-      font-size: 2.5rem;
+    .hero-title {
+      font-size: 5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 6rem;
+    }
+
+    .hero-subtitle {
+      font-size: 2rem;
     }
   }
 </style>

@@ -1,103 +1,30 @@
-<footer class="py-8 relative">
-  <div class="footer-clouds"></div>
+---
 
+---
+
+<footer class="footer">
   <div class="container">
-    <div class="pixel-border footer-content">
-      <div
-        class="flex flex-col md:flex-row justify-between items-center py-4 px-6"
-      >
-        <div class="mb-4 md:mb-0 text-center md:text-left">
-          <span class="footer-logo">Fiorella</span>
-          <p class="footer-copyright">
-            © {new Date().getFullYear()} All rights reserved
-          </p>
-        </div>
-
-        <div class="flex gap-6">
-          <a href="#" class="footer-link">Privacy</a>
-          <a href="#" class="footer-link">Terms</a>
-          <a href="#contact" class="footer-link">Contact</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-decoration">
-      <div class="pixel-grass"></div>
-    </div>
+    <p class="footer-text">© {new Date().getFullYear()} Fiorella Cortez. All rights reserved.</p>
+    <p class="footer-subtext">Crafted with passion for data and innovation</p>
   </div>
 </footer>
 
 <style>
-  footer {
-    margin-top: 3rem;
-    overflow: hidden;
+  .footer {
+    padding: 2rem 0;
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    border-top: 1px solid var(--color-primary-dark);
   }
 
-  .footer-clouds {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="112" height="20" viewBox="0 0 112 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 20V10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10V20H0Z" fill="white"/><path d="M16 20V15C16 9.5 20.5 5 26 5C31.5 5 36 9.5 36 15V20H16Z" fill="white"/><path d="M32 20V12C32 6.5 36.5 2 42 2C47.5 2 52 6.5 52 12V20H32Z" fill="white"/><path d="M48 20V10C48 4.5 52.5 0 58 0C63.5 0 68 4.5 68 10V20H48Z" fill="white"/><path d="M64 20V15C64 9.5 68.5 5 74 5C79.5 5 84 9.5 84 15V20H64Z" fill="white"/><path d="M80 20V12C80 6.5 84.5 2 90 2C95.5 2 100 6.5 100 12V20H80Z" fill="white"/><path d="M96 20V10C96 4.5 100.5 0 106 0C111.5 0 116 4.5 116 10V20H96Z" fill="white"/></svg>');
-    background-repeat: repeat-x;
-    background-size: 112px 20px;
+  .footer-text {
+    color: white;
+    margin-bottom: 0.5rem;
   }
 
-  .footer-content {
-    background-color: white;
-    position: relative;
-    z-index: 2;
-  }
-
-  .footer-logo {
-    font-family: var(--font-pixel);
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--color-accent);
-    letter-spacing: 0.5px;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
-
-  .footer-copyright {
-    font-size: 0.8rem;
-    color: var(--color-text-light);
-  }
-
-  .footer-link {
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-family: var(--font-pixel);
-    position: relative;
-    padding: 0 0.25rem;
-  }
-
-  .footer-link:hover::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-accent-2);
-  }
-
-  .footer-decoration {
-    position: relative;
-    height: 20px;
-    margin-top: -1px;
-  }
-
-  .pixel-grass {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H4V4H0V0Z" fill="%23a17bfe"/><path d="M4 4H8V8H4V4Z" fill="%23a17bfe"/><path d="M8 0H12V4H8V0Z" fill="%23a17bfe"/><path d="M12 4H16V8H12V4Z" fill="%23a17bfe"/></svg>');
-    background-repeat: repeat-x;
-    background-size: 16px 16px;
+  .footer-subtext {
+    font-size: 0.875rem;
+    color: #bfdbfe;
   }
 </style>
